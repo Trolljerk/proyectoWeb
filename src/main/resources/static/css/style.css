@@ -1,125 +1,204 @@
 /*body*/
 
-body{
-    background-image: url(../souce/img/Fondo2.jpg);
+body {
+    background-image: url(../source/img/Fondo2.jpg);
     font-size: 17px;
-}
-
-/*nav*/
-.bs-purple {
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(173, 173, 173));
+    background-color: #fddede;
+  }
+  
+  /*nav*/
+  .bs-purple {
+    background-image: linear-gradient(to right, rgb(206, 206, 206), rgb(221, 221, 221));
     /* Puedes ajustar los colores para el degradado según tus preferencias */
-}
-
-.navbar-brand img{
-width: 50px;
-border-radius: 15%;
-}
-
-.nav{
+  }
+  
+  .navbar-brand img {
+    width: 50px;
+    border-radius: 15%;
+  }
+  
+  .nav {
     display: inline;
-}
+  }
+  
 
-/*conteiner*/
+  /*conteiner*/
 
-.inicio {
+  .inicio {
     position: relative;
-    background-image: url(../sources/img/1.png);
-    background-position: center center;
+    background-image: url(../sources/img/1.png);;
     background-size: cover;
-    height: 90vh;
-    min-height: 30rem;
-}
-
-.inicio::before {
-    content: "";
+    background-position: center;
+    height: 550px;
+  }
+  
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el último valor (0.3) para cambiar la opacidad */
-}
-
-
-
-.inicio h1{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .intro {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
     color: white;
-    font-size: 36px;
-    text-align: center; 
-}
-
-.container{
-    background-color: #cacaca;
+    font-size: 30px;
+    text-align: right;
+  }
+  
+  .intro h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .intro .btn {
+    font-size: 18px;
+  }
+  
+  .container {
+    background-color: #fddede;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-}
-.contenido1{
+  }
+  
+  .contenido1 {
     display: inline-block;
-}
-.contenido1 img{
+  }
+  
+  .contenido1 img {
     width: 250px;
     float: right;
     margin: 10px;
-}
-.contenido2{
+  }
+  
+  .contenido2 {
     display: inline-block;
-}
-.contenido2 img{
+  }
+  
+  .contenido2 img {
     width: 250px;
     float: left;
     margin: 10px;
-}
-.contenido3{
+  }
+  
+  .contenido3 {
     display: inline-block;
-}
-.contenido3 img{
+  }
+  
+  .contenido3 img {
     width: 250px;
     float: right;
     margin: 10px;
-}
-/*secundario*/
-
-.menosrelevante {
+  }
+  
+  /*secundario*/
+  
+  .menosrelevante {
     background-color: #cacaca;
     padding: 1px;
     border: 2px solid #b9b9b9; /* Agregamos un borde de 2px sólido de color #7b55a8 */
-}
+  }
   
-/*footer*/
-
-footer {
-    background-color: #969696;
-    color: #fff;
+  /*footer*/
+  
+  footer {
+    background-color: #ffffff;
+    color: #2c2c2c;
     padding: 20px;
-}
-
-.footer-contenido {
+  }
+  
+  .footer-contenido {
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
-}
-
-/* Estilo opcional para enlaces dentro del footer */
-footer a {
-    color: #fff;
+  }
+  
+  /* Estilo opcional para enlaces dentro del footer */
+  footer a {
+    color: #ffffff;
     text-decoration: none;
-}
-
-/* Estilo opcional para enlaces dentro del footer cuando se les pasa el mouse por encima */
-footer a:hover {
+    width: 60px;
+  }
+  
+  /* Estilo opcional para enlaces dentro del footer cuando se les pasa el mouse por encima */
+  footer a:hover {
     text-decoration: underline;
-}
-
-
-/* Media Query para pantallas móviles (por ejemplo, dispositivos con un ancho máximo de 768px) */
-@media screen and (max-width: 768px) {
-    .hola{
-        display: inline;
+  }
+  
+  /* Media Query para pantallas móviles (por ejemplo, dispositivos con un ancho máximo de 768px) */
+  @media screen and (max-width: 768px) {
+    .hola {
+      display: inline;
     }
-}
+  
+    .subscription-form input,
+    .subscription-form select,
+    .subscription-form button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
+  /* Custom styles */
+  .tour-banner {
+    position: relative;
+    text-align: center;
+  }
+  
+  .tour-banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .tour-banner button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tienda {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .tienda img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .subscription-form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .subscription-form input,
+  .subscription-form select,
+  .subscription-form button {
+    margin: 5px;
+    padding: 10px;
+    width: calc(33% - 30px);
+  }
+  
+  .social-media-links {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .social-media-links a {
+    margin: 0 10px;
+  }
+  
+  .social-media-links img {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+  

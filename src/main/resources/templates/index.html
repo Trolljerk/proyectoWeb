@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-  <!-- Usar th:href para vincular el CSS -->
   <link rel="stylesheet" th:href="@{/css/style.css}">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -45,11 +44,11 @@
             <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true"></a>
             </li>
-			<div>
-				<li class="nav-item">
-					<a class="nav-link" href="/login">login</a>
-				</li>
-			</div>
+            <div>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">login</a>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
@@ -58,18 +57,77 @@
 
   <div class="inicio">
     <div class="overlay"></div>
-    <h1></h1>
+    <div class="intro">
+      <h1>El Nudo Tour</h1>
+      <button class="btn btn-primary">Más información</button>
+    </div>
   </div>
 
-
-
-  <footer>
-    <div class="footer-contenido">
-      <p>
-		Derechos reservados
-	  </p>
+  <div class="container mt-5">
+    <div class="row mt-5">
+      <div class="col-md-6 spotify">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1QOKIsJjvDd9sHkSj96fI3?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="col-md-6 video">
+        <iframe width="100%" height="380" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      </div>
     </div>
-  </footer>
+  </div>
+
+  <div class="container tienda text-center mt-5">
+    
+    <div class="row mt-3">
+      <div class="col-12">
+        <h2>Tienda</h2>
+          <button class="btn btn-primary btn-block">Compra nuestra merch</button>
+      </div>
+  </div>
+    <div class="row merch-row">
+        <div class="col-md-3 merch-item">
+            <img th:src="@{/sources/img/CAMISETA 2.png}" alt="Merch 1" class="img-fluid">
+            
+        </div>
+        <div class="col-md-3 merch-item">
+            <img th:src="@{/sources/img/CAMISETA.png}" alt="Merch 2" class="img-fluid">
+            
+        </div>
+        <div class="col-md-3 merch-item">
+            <img th:src="@{/sources/img/SUDADERA 3.png}" alt="Merch 3" class="img-fluid">
+           
+        </div>
+        <div class="col-md-3 merch-item">
+            <img th:src="@{/sources/img/SUDADERA 4.png}" alt="Merch 4" class="img-fluid">
+           
+        </div>
+    </div>
+    
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <form class="subscription-form text-center">
+        <label for="email">Regístrate para recibir actualizaciones</label>
+        <div class="d-flex justify-content-center mt-2">
+          <input type="email" id="email" name="email" placeholder="Dirección Email" class="form-control w-50 me-2">
+          <select name="country" id="country" class="form-select w-25 me-2">
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="México">México</option>
+          </select> 
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="mt-5">
+  <div class="text-center mt-12">
+    <a href="#"><img th:src="@{/sources/img/spotyfy.png}" alt="Facebook" width="128"></a>
+    <a href="#"><img th:src="@{/sources/img/youtube.png}" alt="Instagram" width="128"></a>
+    <a href="#"><img th:src="@{/sources/img/instagram.png}" alt="Spotify" width="128"></a>
+  </div>
+</footer>
 </body>
 
 </html>

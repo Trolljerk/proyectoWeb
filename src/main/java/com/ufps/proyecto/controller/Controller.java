@@ -25,4 +25,9 @@ public class Controller {
     public String contacto() {
         return "contacto";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
 }
