@@ -1,0 +1,118 @@
+/*body*/
+
+body {
+    font-size: 17px;
+    background-color: #fddede;
+  }
+  
+  /*nav*/
+  .bs-purple {
+    background-image: linear-gradient(to right, rgb(206, 206, 206), rgb(221, 221, 221));
+    /* Puedes ajustar los colores para el degradado según tus preferencias */
+  }
+  
+  .navbar-brand img {
+    width: 50px;
+    border-radius: 15%;
+  }
+  
+  .nav {
+    display: inline;
+  }
+  
+  .nav-item:hover {
+    background-color: #b9b9b9;
+    transition-delay: 0.01s;
+  }
+  
+  .btn{
+    border-radius: 0px;
+    height: 70px;
+    background-color: #ffffff;
+    color: #000000;
+    border: #ffffff;
+    
+  }
+  
+  .btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: #000000;
+  }
+  
+  .user{
+    width: 30px;
+  }
+  
+  .registro{
+    font-size: 30px;
+  }
+  
+  .logos:hover{
+    background-color: #b9b9b9;
+    padding: 10px;
+  }
+  
+  /*conteiner*/
+  
+  
+  /*footer*/
+  
+  footer {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    padding: 20px;
+  }
+  
+  .footer-contenido {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Estilo opcional para enlaces dentro del footer */
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    width: 60px;
+  }
+  
+  /* Estilo opcional para enlaces dentro del footer cuando se les pasa el mouse por encima */
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  /* Media Query para pantallas móviles (por ejemplo, dispositivos con un ancho máximo de 768px) */
+  @media screen and (max-width: 768px) {
+    .hola {
+      display: inline;
+    }
+  
+    .subscription-form input,
+    .subscription-form select,
+    .subscription-form button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
+  /* Custom styles */
+  
+  
+  .social-media-links {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .social-media-links a {
+    margin: 0 10px;
+  }
+  
+  .social-media-links img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
