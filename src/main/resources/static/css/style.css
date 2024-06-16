@@ -1,0 +1,125 @@
+/*body*/
+
+body{
+    background-image: url(../souce/img/Fondo2.jpg);
+    font-size: 17px;
+}
+
+/*nav*/
+.bs-purple {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(173, 173, 173));
+    /* Puedes ajustar los colores para el degradado según tus preferencias */
+}
+
+.navbar-brand img{
+width: 50px;
+border-radius: 15%;
+}
+
+.nav{
+    display: inline;
+}
+
+/*conteiner*/
+
+.inicio {
+    position: relative;
+    background-image: url(../sources/img/1.png);
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    min-height: 30rem;
+}
+
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el último valor (0.3) para cambiar la opacidad */
+}
+
+
+
+.inicio h1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    text-align: center; 
+}
+
+.container{
+    background-color: #cacaca;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.contenido1{
+    display: inline-block;
+}
+.contenido1 img{
+    width: 250px;
+    float: right;
+    margin: 10px;
+}
+.contenido2{
+    display: inline-block;
+}
+.contenido2 img{
+    width: 250px;
+    float: left;
+    margin: 10px;
+}
+.contenido3{
+    display: inline-block;
+}
+.contenido3 img{
+    width: 250px;
+    float: right;
+    margin: 10px;
+}
+/*secundario*/
+
+.menosrelevante {
+    background-color: #cacaca;
+    padding: 1px;
+    border: 2px solid #b9b9b9; /* Agregamos un borde de 2px sólido de color #7b55a8 */
+}
+  
+/*footer*/
+
+footer {
+    background-color: #969696;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-contenido {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo opcional para enlaces dentro del footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo opcional para enlaces dentro del footer cuando se les pasa el mouse por encima */
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Query para pantallas móviles (por ejemplo, dispositivos con un ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+    .hola{
+        display: inline;
+    }
+}
