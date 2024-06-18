@@ -1,125 +1,245 @@
 /*body*/
 
-body{
-    background-image: url(../souce/img/Fondo2.jpg);
-    font-size: 17px;
+body {
+  background-image: url(../source/img/Fondo2.jpg);
+  font-size: 17px;
+  background-color: #eaddcc;
 }
 
 /*nav*/
 .bs-purple {
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(173, 173, 173));
-    /* Puedes ajustar los colores para el degradado según tus preferencias */
+  background-color: white;
+  /* Puedes ajustar los colores para el degradado según tus preferencias */
 }
 
-.navbar-brand img{
-width: 50px;
-border-radius: 15%;
+.navbar-brand img {
+  width: 50px;
+  border-radius: 15%;
 }
 
-.nav{
-    display: inline;
+.nav {
+  display: inline;
 }
 
-/*conteiner*/
+.nav-item:hover {
+  background-color: #b9b9b9;
+  transition-delay: 0.01s;
+}
+
+.btn {
+  border-radius: 0px;
+  height: 70px;
+  background-color: #ffffff;
+  color: #000000;
+  border: #ffffff;
+
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: #000000;
+}
+
+.user {
+  width: 30px;
+}
+
+.registro {
+  font-size: 30px;
+}
+
+.logos:hover {
+  background-color: #b9b9b9;
+  padding: 10px;
+}
+
+/*Container*/
 
 .inicio {
-    position: relative;
-    background-image: url(../sources/img/1.png);
-    background-position: center center;
-    background-size: cover;
-    height: 90vh;
-    min-height: 30rem;
+  position: relative;
+  background-image: url(../sources/img/1.png);
+  ;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
 }
 
-.inicio::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el último valor (0.3) para cambiar la opacidad */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-.inicio h1{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 36px;
-    text-align: center; 
+.intro {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  text-align: right;
 }
 
-.container{
-    background-color: #cacaca;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 50px;
 }
-.contenido1{
-    display: inline-block;
+
+.intro-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-right: 20px;
 }
-.contenido1 img{
-    width: 250px;
-    float: right;
-    margin: 10px;
+
+.intro-content .btn {
+  font-size: 18px;
 }
-.contenido2{
-    display: inline-block;
+
+.container {
+  background-color: #eaddcc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
-.contenido2 img{
-    width: 250px;
-    float: left;
-    margin: 10px;
+
+.contenido1 {
+  display: inline-block;
 }
-.contenido3{
-    display: inline-block;
+
+.contenido1 img {
+  width: 250px;
+  float: right;
+  margin: 10px;
 }
-.contenido3 img{
-    width: 250px;
-    float: right;
-    margin: 10px;
+
+.contenido2 {
+  display: inline-block;
 }
+
+.contenido2 img {
+  width: 250px;
+  float: left;
+  margin: 10px;
+}
+
+.contenido3 {
+  display: inline-block;
+}
+
+.contenido3 img {
+  width: 250px;
+  float: right;
+  margin: 10px;
+}
+
 /*secundario*/
 
 .menosrelevante {
-    background-color: #cacaca;
-    padding: 1px;
-    border: 2px solid #b9b9b9; /* Agregamos un borde de 2px sólido de color #7b55a8 */
+  background-color: #cacaca;
+  padding: 1px;
+  border: 2px solid #b9b9b9;
+  /* Agregamos un borde de 2px sólido de color #7b55a8 */
 }
-  
+
 /*footer*/
 
 footer {
-    background-color: #969696;
-    color: #fff;
-    padding: 20px;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  padding: 20px;
 }
 
 .footer-contenido {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Estilo opcional para enlaces dentro del footer */
 footer a {
-    color: #fff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  width: 60px;
 }
 
 /* Estilo opcional para enlaces dentro del footer cuando se les pasa el mouse por encima */
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
 
 
 /* Media Query para pantallas móviles (por ejemplo, dispositivos con un ancho máximo de 768px) */
 @media screen and (max-width: 768px) {
-    .hola{
-        display: inline;
-    }
+  .hola {
+    display: inline;
+  }
+
+  .subscription-form input,
+  .subscription-form select,
+  .subscription-form button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Custom styles */
+.tour-banner {
+  position: relative;
+  text-align: center;
+}
+
+.tour-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.tour-banner button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tienda {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tienda img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.subscription-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.subscription-form input,
+.subscription-form select,
+.subscription-form button {
+  margin: 5px;
+  padding: 10px;
+  width: calc(33% - 30px);
+}
+
+.social-media-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-media-links a {
+  margin: 0 10px;
+}
+
+.social-media-links img {
+  width: 20px;
+  height: 20px;
 }
