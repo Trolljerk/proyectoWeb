@@ -1,14 +1,14 @@
 /*body*/
 body {
   font-size: 17px;
-  background-image: url(../sources/img/fondo1.png);
+  background-color: #eaddcc;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 /*nav*/
 .bs-purple {
-  background-image: linear-gradient(to right, rgb(206, 206, 206), rgb(221, 221, 221));
+  background-color: white;
 }
 
 .navbar-brand img {
