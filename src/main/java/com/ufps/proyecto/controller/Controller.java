@@ -10,9 +10,9 @@ public class Controller {
         return "index";
     }
 
-    @GetMapping("/eventos")
-    public String eventos() {
-        return "eventos";
+    @GetMapping("/evento")
+    public String evento() {
+        return "evento";
     }
 
     @GetMapping("/merch")
@@ -59,5 +59,16 @@ public class Controller {
     @GetMapping("/merch_admin")
     public String merch_admin() {
         return "merch_admin";
+    }
+
+    
+    @GetMapping("/nuevo_producto")
+    public String nuevo_producto() {
+        return "nuevo_producto";
+    }
+
+    @GetMapping("/nueva_publicacion")
+    public String nueva_publicacion() {
+        return "nueva_publicacion";
     }
 }
