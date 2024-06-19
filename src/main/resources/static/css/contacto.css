@@ -123,6 +123,18 @@ footer a:hover {
     width: 100%;
     margin: 5px 0;
   }
+
+  .contact-form {
+    background-color: #eaddcc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 70%;
+    margin: 20px auto;
+  }
+
+  .logos img {
+    width: 64px;
+  }
 }
 
 /* Custom styles */

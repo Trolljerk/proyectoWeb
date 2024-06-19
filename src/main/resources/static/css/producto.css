@@ -1,14 +1,14 @@
 /*body*/
-
 body {
     font-size: 17px;
     background-color: #eaddcc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
-  
   /*nav*/
   .bs-purple {
     background-color: white;
-    /* Puedes ajustar los colores para el degradado según tus preferencias */
   }
   
   .navbar-brand img {
@@ -25,13 +25,12 @@ body {
     transition-delay: 0.01s;
   }
   
-  .btn{
+  .btn {
     border-radius: 0px;
     height: 70px;
     background-color: #ffffff;
     color: #000000;
     border: #ffffff;
-    
   }
   
   .btn:hover {
@@ -40,24 +39,46 @@ body {
     border: #000000;
   }
   
-  .user{
+  .user {
     width: 30px;
   }
   
-  .registro{
+  .registro {
     font-size: 30px;
   }
   
-  .logos:hover{
+  .logos:hover {
     background-color: #b9b9b9;
     padding: 10px;
   }
   
   /*conteiner*/
   
+  .product-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.product-description {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+
   
   /*footer*/
-  
   footer {
     background-color: #ffffff;
     color: #2c2c2c;
@@ -82,29 +103,25 @@ body {
     text-decoration: underline;
   }
   
-  
-  
   /* Media Query para pantallas móviles (por ejemplo, dispositivos con un ancho máximo de 768px) */
   @media screen and (max-width: 768px) {
     .hola {
-      display: inline;
+        display: inline;
     }
   
     .subscription-form input,
     .subscription-form select,
     .subscription-form button {
-      width: 100%;
-      margin: 5px 0;
+        width: 100%;
+        margin: 5px 0;
     }
 
     .logos img {
-      width: 64px;
-    }
+        width: 64px;
+      }
   }
   
   /* Custom styles */
-  
-  
   .social-media-links {
     text-align: center;
     margin-top: 10px;
@@ -118,5 +135,4 @@ body {
     width: 20px;
     height: 20px;
   }
-  
   

@@ -18,9 +18,8 @@ body {
 }
 
 .container {
-  max-width: 40%;
-  padding: 50px;
-  
+  max-width: 90%;
+  padding: 20px;
   background: #eaddcc;
 }
 
@@ -86,4 +85,73 @@ body {
   height: 50px;
   object-fit: cover;
   border-radius: 5%;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #2c2c2c;
+  padding: 20px;
+}
+
+.footer-contenido {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Estilo opcional para enlaces dentro del footer */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  width: 60px;
+}
+
+/* Estilo opcional para enlaces dentro del footer cuando se les pasa el mouse por encima */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .search-icon {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .artist-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-contenido {
+    padding: 10px;
+  }
+
+  .logos img {
+    width: 64px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-brand img {
+    width: 40px;
+  }
+  
+  .user {
+    width: 25px;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 14px;
+  }
+  
+  .registro {
+    font-size: 24px;
+  }
 }

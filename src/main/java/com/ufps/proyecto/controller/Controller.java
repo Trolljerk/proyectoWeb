@@ -39,4 +39,25 @@ public class Controller {
     public String buscador() {
         return "buscador";
     }
+
+    @GetMapping("/producto")
+    public String producto() {
+        return "producto";
+    }
+    
+    
+    @GetMapping("/info_evento")
+    public String info_evento() {
+        return "info_evento";
+    }
+
+    @GetMapping("/evento_admin")
+    public String evento_admin() {
+        return "evento_admin";
+    }
+
+    @GetMapping("/merch_admin")
+    public String merch_admin() {
+        return "merch_admin";
+    }
 }

@@ -52,6 +52,11 @@ body {
   padding: 10px;
 }
 
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
 /*conteiner*/
 
 /*footer*/
@@ -90,6 +95,10 @@ footer a:hover {
   .subscription-form button {
       width: 100%;
       margin: 5px 0;
+  }
+
+  .logos img {
+    width: 64px;
   }
 }
 

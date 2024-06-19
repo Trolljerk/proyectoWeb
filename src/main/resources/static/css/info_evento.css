@@ -1,0 +1,88 @@
+body {
+    font-size: 17px;
+    background-color: #eaddcc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /*nav*/
+  .bs-purple {
+    background-color: white;
+  }
+  
+  .navbar-brand img {
+    width: 50px;
+    border-radius: 15%;
+  }
+  
+  .nav {
+    display: inline;
+  }
+  
+  .nav-item:hover {
+    background-color: #b9b9b9;
+    transition-delay: 0.01s;
+  }
+  
+  .btn {
+    border-radius: 0px;
+    height: 70px;
+    background-color: #ffffff;
+    color: #000000;
+    border: #ffffff;
+  }
+  
+  .btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: #000000;
+  }
+
+  .user {
+    width: 30px;
+  }
+  
+  .registro {
+    font-size: 30px;
+  }
+  
+  .logos:hover {
+    background-color: #b9b9b9;
+    padding: 10px;
+  }
+  
+  
+  footer {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    padding: 20px;
+  }
+  
+  .logos img {
+    width: 128px;
+  }
+  
+  /* Custom styles */
+  .list-group-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #ffffff;
+    color: #000000;
+    border: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: #000000;
+  }
+  
+  .btn-secondary {
+    background-color: #cccccc;
+    color: #666666;
+    border: #cccccc;
+  }
+  
