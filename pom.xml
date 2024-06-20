@@ -70,6 +70,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		<dependencies>
+    <!-- Otras dependencias del proyecto -->
+    <dependency>
+        <groupId>com.google.firebase</groupId>
+        <artifactId>firebase-admin</artifactId>
+        <version>8.1.0</version>
+    </dependency>
+</dependencies>
+
 
 	</dependencies>
 
