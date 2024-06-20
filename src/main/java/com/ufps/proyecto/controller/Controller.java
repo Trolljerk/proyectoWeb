@@ -4,7 +4,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @org.springframework.stereotype.Controller
 public class Controller {
-//Edwin no hizo una monda
+    // Una maldita monda, Edwin. ¡Algo así como un comentario elegante y sofisticado!
+
     @GetMapping("/")
     public String index() {
         return "index";
@@ -44,8 +45,7 @@ public class Controller {
     public String producto() {
         return "producto";
     }
-    
-    
+
     @GetMapping("/info_evento")
     public String info_evento() {
         return "info_evento";
@@ -61,7 +61,6 @@ public class Controller {
         return "merch_admin";
     }
 
-    
     @GetMapping("/nuevo_producto")
     public String nuevo_producto() {
         return "nuevo_producto";
