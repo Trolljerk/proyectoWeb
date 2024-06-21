@@ -84,7 +84,7 @@
     >
       <div class="login-container p-5 rounded">
         <h2 class="mb-4 text-center">Iniciar sesión</h2>
-        <form>
+        <form th:action="@{/firebase/getAll}">
           <div class="mb-3">
             <label for="usuario" class="form-label">Nombre de usuario</label>
             <input
